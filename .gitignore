@@ -1,0 +1,9 @@
+*.txt
+dist/*
+dist
+build/*
+build
+debug/*
+debug
+texttk.egg-info/*
+texttk.egg-info

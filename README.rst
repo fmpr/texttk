@@ -2,7 +2,7 @@
 texttk -- Text Preprocessing in Python
 ==============================================
 
-texttk is a Python library for *text preprocessing* of large corpora, that can be used for *topic modelling*, *text classification*, *information retrieval*, etc.
+texttk is a Python library for *text preprocessing* of large corpora, that can be used for *topic modelling*, *text classification*, *document clustering*, *information retrieval*, etc.
 
 Features
 ---------
@@ -20,7 +20,7 @@ Default preprocessing pipeline
 ---------
 
 * unescape characters
-* remove html
+* remove HTML tags
 * strip accents
 * join URLs
 * join compound words
@@ -42,7 +42,7 @@ Default preprocessing pipeline
 Installation
 ------------
 
-This software depends on `ntlk`, `sklearn` and `HTMLParser`.
+This software depends on `nltk`, `sklearn` and `HTMLParser`.
 You must have them installed prior to installing `texttk`.
 If you wish to use NER, `texttk` also requires access to the Stanford NER Java library.
 
@@ -50,6 +50,6 @@ The simple way to install `texttk` is::
 
     python setup.py install
 
-Gensim is open source software released under the `GNU LGPL license <http://www.gnu.org/licenses/lgpl.html>`_.
+`texttk` is open source software released under the `GNU LGPL license <http://www.gnu.org/licenses/lgpl.html>`_.
 Copyright (c) 2016-now Filipe Rodrigues
 
