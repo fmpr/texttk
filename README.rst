@@ -44,7 +44,7 @@ Basic Usage
 
 Basic preprocessing of a corpus and transformation to bag-of-words format::
 
-	import texttk
+    import texttk
     corpus = ... # a list of strings
     tp = texttk.TextPreprocesser(decode_error='strict', strip_accents='unicode', ignore_list=[], \
 				lowercase=True, remove_html=True, join_urls=True, use_bigrams=True, \
