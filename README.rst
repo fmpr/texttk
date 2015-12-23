@@ -39,6 +39,18 @@ Default preprocessing pipeline
 * remove very frequent words
 * convert corpus to bag-of-words format
 
+Basic Usage
+------------
+
+Basic preprocessing of a corpus and transformation to bag-of-words format::
+
+    corpus = ... # a list of strings
+	tp = texttk.TextPreprocesser(decode_error='strict', strip_accents='unicode', ignore_list=[], lowercase=True, \
+						remove_html=True, join_urls=True, use_bigrams=True, use_ner=True, stanford_ner_path="<path_here>", \
+						use_lemmatizer=False, max_df=0.95, min_df=1, max_features=None)
+	corpus = tp.preprocess_corpus(corpus)
+	transformed_corpus, vocab = tp.convert_to_bag_of_words(corpus)
+
 Installation
 ------------
 
