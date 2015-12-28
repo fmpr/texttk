@@ -37,7 +37,8 @@ def read_utf8_corpus(self, directory):
 	return corpus
 
 def demo():
-	#corpus = read_utf8_corpus("/Users/fmpr/Downloads/events_search_results/query_search_results/")
+	# load corpus
+	#corpus = read_utf8_corpus("/Users/fmpr/Downloads/events_search_results/query_search_results/") 
 	corpus = read_csv_utf8("/Users/fmpr/code/ioracle/data/sg_events_join_venues_26052015_whole_island_utf8.csv")
 	
 	# debug text preprocessing
