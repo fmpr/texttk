@@ -47,7 +47,7 @@ def demo():
 		fw.close()
 
 	ignore_list = ["singapor", "sg", "expo", "sale", "event", "exhibit", "fair", "com", "asia"]
-	stanford_ner_path = "/Users/fmpr/Desktop/stanford-ner-2015-12-09/"
+	stanford_ner_path = "/Users/fmpr/code/texttk/stanford-ner-2015-12-09/"
 	tp = texttk.TextPreprocesser(decode_error='strict', strip_accents='unicode', ignore_list=ignore_list, lowercase=True, \
 						remove_html=True, join_urls=True, use_bigrams=True, use_ner=True, stanford_ner_path=stanford_ner_path, \
 						use_lemmatizer=False, max_df=0.95, min_df=1, max_features=None)
